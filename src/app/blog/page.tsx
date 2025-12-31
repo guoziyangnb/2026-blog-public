@@ -13,7 +13,8 @@ import ShortLineSVG from '@/svgs/short-line.svg'
 import { useBlogIndex, type BlogIndexItem } from '@/hooks/use-blog-index'
 import { useCategories } from '@/hooks/use-categories'
 import { useReadArticles } from '@/hooks/use-read-articles'
-import JuejinSVG from '@/svgs/juejin.svg'
+// import JuejinSVG from '@/svgs/juejin.svg'
+import CsdnSVG from '@/svgs/csdn.svg'
 import { useAuthStore } from '@/hooks/use-auth'
 import { useConfigStore } from '@/app/(home)/stores/config-store'
 import { readFileAsText } from '@/lib/file-utils'
@@ -443,21 +444,21 @@ export default function BlogPage() {
 						</motion.div>
 					)
 				})}
-				{/* {items.length > 0 && (
+				{items.length > 0 && (
 					<div className='text-center'>
 						<motion.a
 							initial={{ opacity: 0, scale: 0.6 }}
 							animate={{ opacity: 1, scale: 1 }}
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
-							href='https://juejin.cn/user/2427311675422382/posts'
+							href='https://blog.csdn.net/yf15996280470'
 							target='_blank'
 							className='card text-secondary static inline-flex items-center gap-2 rounded-xl px-4 py-2 text-xs'>
-							<JuejinSVG className='h-4 w-4' />
+							<CsdnSVG className='h-4 w-4' />
 							更多
 						</motion.a>
 					</div>
-				)} */}
+				)}
 			</div>
 
 			<div className='pt-12'>
