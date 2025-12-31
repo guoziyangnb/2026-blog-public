@@ -3,6 +3,7 @@ import GithubSVG from '@/svgs/github.svg'
 import { ANIMATION_DELAY, CARD_SPACING } from '@/consts'
 import { useConfigStore } from './stores/config-store'
 import JuejinSVG from '@/svgs/juejin.svg'
+import CsdnSVG from '@/svgs/csdn.svg'
 import EmailSVG from '@/svgs/email.svg'
 import XSVG from '@/svgs/x.svg'
 import TgSVG from '@/svgs/tg.svg'
@@ -26,6 +27,7 @@ import { createPortal } from 'react-dom'
 type SocialButtonType =
 	| 'github'
 	| 'juejin'
+	| 'csdn'
 	| 'email'
 	| 'link'
 	| 'x'
@@ -112,6 +114,7 @@ export default function SocialButtons() {
 	const iconMap: Record<SocialButtonType, React.ComponentType<{ className?: string }>> = {
 		github: GithubSVG,
 		juejin: JuejinSVG,
+		csdn: CsdnSVG,
 		email: EmailSVG,
 		wechat: WechatSVG,
 		x: XSVG,
@@ -150,6 +153,21 @@ export default function SocialButtons() {
 					{...commonProps}
 					className={`font-averia flex items-center gap-2 rounded-xl border bg-[#070707] text-xl text-white ${!hasLabel ? 'p-1.5' : 'px-3 py-1.5'}`}
 					style={{ boxShadow: ' inset 0 0 12px rgba(255, 255, 255, 0.4)' }}>
+					<Icon className={'size-8'} />
+					{hasLabel && button.label}
+				</motion.a>
+			)
+		}
+
+		if (button.type === 'csdn') {
+			return (
+				<motion.a
+					key={button.id}
+					href={button.value}
+					target='_blank'
+					{...commonProps}
+					className={`font-averia flex items-center gap-2 rounded-xl border bg-[#fc5531] text-xl text-white ${!hasLabel ? 'p-1.5' : 'px-3 py-1.5'}`}
+					style={{ boxShadow: ' inset 0 0 12px rgba(252, 255, 255, 0.4)' }}>
 					<Icon className={'size-8'} />
 					{hasLabel && button.label}
 				</motion.a>
