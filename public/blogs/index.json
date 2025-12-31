@@ -25,18 +25,6 @@
     "category": "总结"
   },
   {
-    "slug": "kuangyeshidai",
-    "title": "狂野时代",
-    "tags": [
-      "影评",
-      "日常"
-    ],
-    "date": "2025-11-22",
-    "summary": "观《狂野时代》后感",
-    "cover": "/blogs/kuangyeshidai/e260bea5dbfda5b7.jpg",
-    "hidden": false
-  },
-  {
     "slug": "liquid-grass",
     "title": "好玩的液态玻璃",
     "tags": [
@@ -59,31 +47,6 @@
     "cover": "/blogs/readme/9532a65cc32ca5eb.png",
     "hidden": false,
     "category": ""
-  },
-  {
-    "slug": "game-again",
-    "title": "又折腾一次游戏的记录心得",
-    "tags": [
-      "笔记",
-      "心得",
-      "游戏",
-      "学习"
-    ],
-    "date": "2025-11-14",
-    "summary": "游戏难，又总会悸动",
-    "cover": "/blogs/game-again/4425a1ea5cd869ec.jpg",
-    "category": "总结"
-  },
-  {
-    "slug": "rewrite-blog-website",
-    "title": "我想重构Blog网站",
-    "tags": [
-      "重构blog网站"
-    ],
-    "date": "2025-11-11",
-    "summary": "这是重构blog网站的第一篇blog，终于把上个网站的blog 内容移动过来了。当然还有其它内容还没弄。",
-    "cover": "/blogs/rewrite-blog-website/7ec6838f38c9161e.png",
-    "category": "总结"
   },
   {
     "slug": "retro-grid",
@@ -357,16 +320,6 @@
     "cover": "/blogs/dynamic-circle/f35df236cc5a83a61702437581667af73e3b2780e3c4f9a0b7c1008a5c1984ca.png"
   },
   {
-    "slug": "review",
-    "title": "8,9月回顾",
-    "tags": [
-      "总结"
-    ],
-    "date": "2023-10-09",
-    "summary": "迷迷糊糊就过了两月，好像又学了些东西，又有些模糊，得理一下。",
-    "cover": "/blogs/review/fb438d79024a4207.jpg"
-  },
-  {
     "slug": "xmind-rewritten",
     "title": "Xmind 重写了渲染引擎",
     "tags": [
@@ -441,16 +394,6 @@
     "date": "2023-06-29",
     "summary": "简单记录一下在 MDN 看到的 CSS Blog 文章",
     "cover": "/blogs/css-colors/e5a78a7492d1850d.png"
-  },
-  {
-    "slug": "ruanyifeng",
-    "title": "阮一峰见证前端历史",
-    "tags": [
-      "阮一峰"
-    ],
-    "date": "2023-06-15",
-    "summary": "阮一峰是我最喜欢的博客作者，但他本来不是一名前端开发者，而是学校教书的教授。然而，他的博客伴随着前端在国内的兴起。",
-    "cover": "/blogs/ruanyifeng/16ca1175afbdcd1b.jpg"
   },
   {
     "slug": "design-patterns-react",
