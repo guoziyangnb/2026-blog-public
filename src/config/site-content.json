@@ -42,10 +42,10 @@
 	"currentBackgroundImageId": "",
 	"socialButtons": [
 		{
-			"id": "button-1767175320463",
-			"type": "qq",
-			"value": "2263831821",
-			"label": "",
+			"id": "juejin",
+			"type": "csdn",
+			"value": "https://blog.csdn.net/yf15996280470",
+			"label": "CSDN",
 			"order": 1
 		},
 		{
@@ -56,10 +56,10 @@
 			"order": 2
 		},
 		{
-			"id": "juejin",
-			"type": "csdn",
-			"value": "https://blog.csdn.net/yf15996280470",
-			"label": "CSDN",
+			"id": "button-1767175320463",
+			"type": "qq",
+			"value": "2263831821",
+			"label": "",
 			"order": 3
 		}
 	],
