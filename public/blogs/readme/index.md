@@ -6,7 +6,7 @@
 
 开源项目地址：https://github.com/YYsuni/2025-blog-public
 
-![](blogs/readme/f8fb1af7c34a8cf8.webp)
+![](/blogs/readme/f8fb1af7c34a8cf8.webp)
 
 我们在本地克隆一下
 
@@ -70,16 +70,16 @@ _GitHub App name_ 和 _Homepage URL_ , 输入什么都不影响。Webhook 也关
 
 然后点击**Pages**
 
-![](blogs/readme/c0abbc02a187437a.jpg)
+![](/blogs/readme/c0abbc02a187437a.jpg)
 
 
 导入仓库 选github，跳登录，github登录 然后选则我们刚才克隆的仓库
 
-![](blogs/readme/6474d287a68e76ca.jpg)
+![](/blogs/readme/6474d287a68e76ca.jpg)
 
 ## 5. 设置环境变量
 
-![](blogs/readme/db70df0cfdc5d4ee.png)
+![](/blogs/readme/db70df0cfdc5d4ee.png)
 
 分别是_NEXT_PUBLIC_GITHUB_OWNER_和_NEXT_PUBLIC_GITHUB_APP_ID_  
 
@@ -92,7 +92,7 @@ _GitHub App name_ 和 _Homepage URL_ , 输入什么都不影响。Webhook 也关
 ![](/blogs/readme/827b5b37b16e8eef.png)
 **这个域名必须得先备案！!**，必须得是CNAME类型的才行，然后把记录值添加到对应的域名服务商的解析中，等待即可
 
-![](blogs/readme/a50b43c6af9142ac.jpg)
+![](/blogs/readme/a50b43c6af9142ac.jpg)
 
 之后就可以根据自定义的域名访问了
 
