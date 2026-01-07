@@ -80,7 +80,7 @@ _GitHub App name_ 和 _Homepage URL_ , 输入什么都不影响。Webhook 也关
 
 ![](/blogs/readme/827b5b37b16e8eef.png)，**这个域名必须得先备案！!**，必须得是CNAME类型的才行，然后把记录值添加到对应的域名服务商的解析中，等待即可
 
-
+blob:https://2026-blog-public.vercel.app/a4c2ad09-3257-41f1-a678-3f7bba94e251
 
 之后就可以根据自定义的域名访问了
 
