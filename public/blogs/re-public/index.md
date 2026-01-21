@@ -3,13 +3,13 @@
 因为我们是部署在服务器上，以IP的形式去访问的，所以
 - 添加的类型是A
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/KZL0ZldiTkMzjM5s.png)
+![](/blogs/re-public/e70ae5b7e28c5498.png)
 
 - 主机记录就是你想要访问的二级域名的头部
 
 比如你买了`bbb.com`，这个是主域名（也叫一级域名），然后你想要以`aaa.bbb.com`的形式去访问你的项目，那么你的主机记录就是`aaa`。如果想要直接以`bbb.com`去访问，主机记录填*@*即可，详细解释如下
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/QHBgdf6dCRQurYIZ.webp)
+![](/blogs/re-public/372e552090a00852.png)
 
 - 记录值就是你的服务器的**公网IP**地址
 
@@ -17,17 +17,17 @@
 
 腾讯云的CORS记得把自己的域名添加上去`http://你的域名`，这里http即可
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/upk0KZ9v6A1DHhPD.webp)
+![](/blogs/re-public/df8d9070f3122217.png)
 
 ## 添加域名
 
 宝塔面板，前端中
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/pIbgXeOgvHfIDoi2.webp)
+![](/blogs/re-public/88b9adc09b4b5f4a.png)
 
 - 这里添加域名即可，然后配置文件略微改一下，http不改成https是因为后端就是http服务，
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/Ui12lLzkthun3u42.webp)
+![](/blogs/re-public/e1aaec13d0259bbc.png)
 
 **location /** 的需要放在下面
 
@@ -36,22 +36,21 @@
 1. 点击 Let's Encrypt 去申请免费90天的证书，然后下载
 
 
-![image.png](https://pic.code-nav.cn/post_picture/1808364793110532098/lEkpPXciRmtDeOc5.webp)
+![](/blogs/re-public/c0f3468e106f8d43.png)
 
 
 2. 之后来到当前证书，填写下载的压缩包里key文件和pem文件里的内容，点击保存
 
 
-![image.png](https://pic.code-nav.cn/post_picture/1808364793110532098/OwsmQG0Dgj4iBSO7.webp)
+![](/blogs/re-public/2ff9334b0d9b7fb3.png)
 
 - 后续想要安全**可以打开强制HTTPS**
 
-![image.png](https://pic.code-nav.cn/post_picture/1808364793110532098/J4wAhc0470pblK6k.png)
+![](/blogs/re-public/0694909fd6fc8f5c.png)
 
 3. 验证
 
-
-![image4.png](https://pic.code-nav.cn/post_picture/1808364793110532098/davIL8lq7DA5DVcP.png)
+![](/blogs/re-public/be22ee806e149afe.png)
  
 首先，如上图，首先认证域名得是我们填的，如果是guoziyang.com，那么你的SSL证书必须得是泛证书，关于申请方法可参考leikoo大佬的：
 
@@ -63,11 +62,11 @@
 
 生产环境那里需要改成自己的域名，然后由于前面开了**强制HTTPS**,所以这里也要改成https
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/gkXnxAVsTnoB57hr.webp)
+![](/blogs/re-public/4e34161677facf75.png)
 
 同样的ws这里也需要改成域名，不需要加端口号
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/AtgUmWUUccknGpWt.webp)
+![](/blogs/re-public/4ccaaa3aa62fee55.png)
 
 之后正常打包
 
@@ -116,8 +115,7 @@ const myAxios = axios.create({
 
 然后到package.json改下打包命令
 
-
-![image.png](https://pic.code-nav.cn/post_picture/1808364793110532098/OC9xJ4d6KqGqw3Ma.webp)
+![](/blogs/re-public/f5876e2911ceb32c.png)
 
 就改下之前鱼皮写的`pure-build`的后面添加`--mode prod`,意思就是打包的时候加载生产环境，即`.env.prod`
 
@@ -135,7 +133,7 @@ const myAxios = axios.create({
 
 后端并没有需要改的地方，只是要注意下数据库以及分库分表的位置，*localhost*是否改成了服务器的ip地址
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/kOQ3WN59bOXlnQG3.webp)
+![](/blogs/re-public/975aab21a73bc56b.png)
 
 宝塔面板的配置按照之前的即可
 
@@ -147,6 +145,6 @@ const myAxios = axios.create({
 
 然后点击那个**锁**，会显示连接安全，毕竟配置了SSL证书
 
-![](https://pic.code-nav.cn/post_picture/1808364793110532098/DWNQQ1V9aDyhUEKc.webp)
+![](/blogs/re-public/ac708fd41846c7ff.png)
 
 > 感觉 **SSL** 这玩意一定要在服务器上把 **SSL** 证书上传了才行，否则如果你的前端是部署在`vercel`上，然后添加了自定义域名(哪怕备案了)，虽然能正常访问，但还是显示不安全。
